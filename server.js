@@ -64,12 +64,11 @@ module.exports = {
     },
 
     /**
-     * Generates a random number of given length
+     * Generates a random string of number of given length
      * Includes only numbers
      * @param length Length of random string to be generated
-     * @returns Random number of given length
+     * @returns Random string of numbers of given length
      */
-    //TOD: Check and change return type to string
     randomNumber: function (length) {
         var string = "1234567890";
         var str = '';
@@ -82,7 +81,7 @@ module.exports = {
                 str = '';
             }
         }
-        return parseInt(str);
+        return str;
     },
 
     /**
