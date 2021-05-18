@@ -10,8 +10,14 @@ var random = require('random-string-module);
 ```javascript
 ## METHOD
 
-# randomAlphanumericByLength
-This method takes in an integer value which specifies the length of returned random string.
+# randomAlphanumeric
+This method generates a random string of given length.
+param length Length of random string to be generated.
+param lettersIncluded optional field which can be one of following:
+all (default): Includes uppercase letters lowercase letters and numbers
+lowercase: Includes lowercase letters and numbers
+uppercase: Includes uppercase letters and numbers
+
 
 console.log(random.randomAlphanumericByLength(10))
 //Return b2pdk4bv98
