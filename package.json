@@ -1,0 +1,25 @@
+{
+  "name": "random-string-alphanumeric-generator",
+  "version": "0.10.0",
+  "description": "A module that can return various types of random string",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ritesh25696/random-string-alphanumeric-module.git"
+  },
+  "keywords": [
+    "string",
+    "random",
+    "crypto",
+    "alphanumeric"
+  ],
+  "author": "Ritesh Chauhan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ritesh25696/random-string-alphanumeric-module/issues"
+  },
+  "homepage": "https://github.com/Ritesh25696/random-string-alphanumeric-module#readme"
+}
