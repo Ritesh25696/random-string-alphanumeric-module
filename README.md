@@ -7,11 +7,11 @@ npm install random-string-alphanumeric-module --save
 ## HOW TO USE
 var random = require('random-string-module);
 
-console.log(random.randomAlphanumeric(10, "lowercase"))
-//Return b2pdk4bv98
+`console.log(random.randomAlphanumeric(10, "lowercase"))`
+//Returns b2pdk4bv98
 
-console.log(random.randomLetters(10, "uppercase"))
-//Return ABHUISLCHF
+`console.log(random.randomLetters(10, "uppercase"))`
+//Returns ABHUISLCHF
 
 ```javascript
 ### METHODS
