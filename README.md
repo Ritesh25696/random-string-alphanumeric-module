@@ -2,10 +2,10 @@
 A module that can return various types of random string
 
 ## HOW TO INSTALL
-npm install random-string-alphanumeric-module --save
+npm install random-string-alphanumeric-generator --save
 
 ## HOW TO USE
-var random = require('random-string-alphanumeric-module);
+var random = require('random-string-alphanumeric-generator');
 
 `console.log(random.randomAlphanumeric(10, "lowercase"))`
 //Returns b2pdk4bv98
