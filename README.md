@@ -16,6 +16,24 @@ var random = require('random-string-alphanumeric-generator');
 ```javascript
 ### METHODS
 
+## getRndFloat
+
+/*
+Returns random float between min(included) and max(excluded) numbers.
+@param min Minimum number default as 0
+@param max Maximum number default as 1
+@param decimalPlaces The number of digits after the decimal point default is 4
+*/
+
+## getRndInteger
+
+/**
+Returns random integer between min(included) and max(excluded) numbers.
+@param min Minimum number default as 0
+@param max Maximum number default as 100
+@returns Random number in given range
+ */
+
 ## randomAlphanumeric
 
 /* 
@@ -96,3 +114,4 @@ Includes numbers, small letters, capital letters and fixed number of special cha
 @param length Length of random string to be generated.
 @param totalSpecialChar Fixed number of special characters required.
 */
+

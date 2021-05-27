@@ -190,7 +190,7 @@ module.exports = {
         var string = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
         var str = '';
         var i = 0;
-        while (i < minSpecialChar) {
+        while (i < totalSpecialChar) {
             str += specialCharString.charAt(Math.floor(Math.random() * specialCharString.length));
             i++;
         }
@@ -199,5 +199,28 @@ module.exports = {
             i++;
         }
         return str;
+    },
+   
+    /**
+     * Returns random float between min(included) and max(excluded) numbers.
+     * @param min Minimum number default as 0
+     * @param max Maximum number default as 1
+     * @param decimalPlaces The number of digits after the decimal point default is 4
+     * @returns Random number in given range
+     */
+     getRndFloat: function (min = 0, max = 1, decimalPlaces = 4) {
+        console.log(`min is ${min} and max is ${max}`);
+        console.log(`random number is ${Math.random()}`);
+        return ((Math.random() * (max - min) + min)).toFixed(decimalPlaces);
+    },
+
+    /**
+     * Returns random integer between min(included) and max(excluded) numbers.
+     * @param min Minimum number default as 0
+     * @param max Maximum number default as 100
+     * @returns Random number in given range
+     */
+    getRndInteger: function(min = 0, max = 100) {
+        return Math.floor(Math.random() * (max - min) ) + min;
     }
 }
