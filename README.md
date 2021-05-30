@@ -1,5 +1,10 @@
 # random-string-alphanumeric-generator
-A module that can return various types of random string
+A module that can return various types of random string<br>
+[![npm version](https://badge.fury.io/js/random-string-alphanumeric-generator.svg)](https://badge.fury.io/js/random-string-alphanumeric-generator)
+![npm](https://img.shields.io/npm/v/random-string-alphanumeric-generator?logo=npm&style=flat-square)
+![npm](https://img.shields.io/npm/dm/random-string-alphanumeric-generator?style=flat-square)
+![GitHub Release Date](https://img.shields.io/github/release-date/ritesh25696/random-string-alphanumeric-module?logo=semantic-release&style=flat-square)
+![Maintenance](https://img.shields.io/maintenance/yes/2021?color=%237FFFD4&style=flat-square)
 
 ## HOW TO INSTALL
 npm install random-string-alphanumeric-generator --save
@@ -16,11 +21,11 @@ var random = require('random-string-alphanumeric-generator');
 ### METHODS
 
 - randomAlphanumeric<br>
-Generates a random string of given length
-lettersIncluded optional field which can be one of following
-all (default): Includes uppercase letters lowercase letters and numbers
-lowercase: Includes lowercase letters and numbers
-uppercase: Includes uppercase letters and numbers
+Generates a random string of given length<br>
+lettersIncluded optional field which can be one of following<br>
+all (default): Includes uppercase letters lowercase letters and numbers<br>
+lowercase: Includes lowercase letters and numbers<br>
+uppercase: Includes uppercase letters and numbers<br>
 ```
  random.randomAlphanumeric(10, lowercase) // uhf2m363l1
  random.randomAlphanumeric(10, uppercase) // DG8CXMZ21F
@@ -28,11 +33,11 @@ uppercase: Includes uppercase letters and numbers
 ```
 
 - randomLetters<br>
-Generates a random string of given length
-lettersIncluded optional field which can be one of following
-all (default): Includes uppercase letters lowercase letters and numbers
-lowercase: Includes lowercase letters and numbers
-uppercase: Includes uppercase letters and numbers
+Generates a random string of given length<br>
+lettersIncluded optional field which can be one of following<br>
+all (default): Includes uppercase letters lowercase letters and numbers<br>
+lowercase: Includes lowercase letters and numbers<br>
+uppercase: Includes uppercase letters and numbers<br>
 ```
   random.randomAlphanumeric(10, lowercase) // aqswedfrtg
   random.randomAlphanumeric(10, uppercase) // KINHBGFYRS
