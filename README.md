@@ -7,10 +7,10 @@ npm install random-string-alphanumeric-generator --save
 ## HOW TO USE
 var random = require('random-string-alphanumeric-generator');
 
-`console.log(random.randomAlphanumeric(10, "lowercase"))`
+`random.randomAlphanumeric(10, "lowercase")`
 //Returns b2pdk4bv98
 
-`console.log(random.randomLetters(10, "uppercase"))`
+`random.randomLetters(10, "uppercase")`
 //Returns ABHUISLCHF
 
 ```javascript
