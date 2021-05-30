@@ -13,105 +13,96 @@ var random = require('random-string-alphanumeric-generator');
 `random.randomLetters(10, "uppercase")`
 //Returns ABHUISLCHF
 
-```javascript
 ### METHODS
 
-## getRndFloat
+- randomAlphanumeric<br>
+Generates a random string of given length
+lettersIncluded optional field which can be one of following
+all (default): Includes uppercase letters lowercase letters and numbers
+lowercase: Includes lowercase letters and numbers
+uppercase: Includes uppercase letters and numbers
+```
+ random.randomAlphanumeric(10, lowercase) // uhf2m363l1
+ random.randomAlphanumeric(10, uppercase) // DG8CXMZ21F
+ random.randomAlphanumeric(10) // 5hiry73uV8
+```
 
-/*
-Returns random float between min(included) and max(excluded) numbers.
-@param min Minimum number default as 0
-@param max Maximum number default as 1
-@param decimalPlaces The number of digits after the decimal point default is 4
-*/
+- randomLetters<br>
+Generates a random string of given length
+lettersIncluded optional field which can be one of following
+all (default): Includes uppercase letters lowercase letters and numbers
+lowercase: Includes lowercase letters and numbers
+uppercase: Includes uppercase letters and numbers
+```
+  random.randomAlphanumeric(10, lowercase) // aqswedfrtg
+  random.randomAlphanumeric(10, uppercase) // KINHBGFYRS
+  random.randomAlphanumeric(10) // 5hiry73uV8 // KqjfrQNkth
+```
 
-## getRndInteger
+- randomNumber<br>
+Generates a random number of given length
+```
+  random.randomNumber(10) // 4369739553
+```
 
-/**
+- randomHex<br>
+Generates a random hex of given length
+Includes only hex characters i.e [0-9 and a-f]
+```
+  random.randomHex(10) // 1dd12084e3
+```
+
+- randomBinary<br>
+Generates a random binary string of given length
+Includes only binary characters i.e [0 and 1]
+```
+  random.randomBinary(10) // 1110011111
+```
+
+- randomOctal<br>
+Generates a random octal string of given length
+Includes only octal characters i.e [0-7]
+```
+  random.randomOctal(10) // 2350150766
+```
+
+- customRandomString<br>
+Generates a random string of given length
+Includes only characters given in customCharSet
+```
+  random.customRandomString(10, abcdef) // eadefcaffb
+```
+
+- getRandomPassword<br>
+Generates a random string of given length
+Includes numbers, small letters, capital letters and special characters
+Second optional param as minimum number of special characters required
+```
+  random.getRandomPassword(10)     // JkCtzL*!Pd
+  random.getRandomPassword(10, 2)  // $)FN3A#dP^
+```
+
+- getRandomPasswordStrict<br>
+Generates a random string of given length
+Includes numbers, small letters, capital letters and special characters
+second optional param as fixed number of special characters required
+```
+  random.getRandomPasswordStrict(10, 3) // #TUjLFgdRg
+```
+
+- getRndFloat<br>
+Generates random float between min(included) and max(excluded) numbers.
+Min: Default is 0
+Max: Default is 1
+Third optional param as number of digits after the decimal point default is 4
+```
+  random.getRndFloat(4, 5, 3) // 4.304
+```
+
+- getRndInteger<br>
 Returns random integer between min(included) and max(excluded) numbers.
-@param min Minimum number default as 0
-@param max Maximum number default as 100
-@returns Random number in given range
- */
-
-## randomAlphanumeric
-
-/* 
-This method generates a random string of given length.
-@param length Length of random string to be generated.
-@param lettersIncluded optional field which can be one of following:
-all (default): Includes uppercase letters lowercase letters and numbers i.e [a-z and A-Z].
-lowercase: Includes lowercase letters and numbers i.e [a-z].
-uppercase: Includes uppercase letters and numbers i.e [A-Z].
- */
-
-## randomLetters
-
-/*
-This method generates a random string of given length.
-@param length Length of random string to be generated.
-@param lettersIncluded optional field which can be one of following:
-all (default): Includes uppercase letters lowercase letters and numbers i.e [a-z and A-Z].
-lowercase: Includes lowercase letters and numbers i.e [a-z].
-uppercase: Includes uppercase letters and numbers i.e [A-Z].
-*/ 
-
-## randomNumber
-    
-/*
-This method generates a random string of number of given length.
-Includes only numbers i.e [0-9].
-@param length Length of random string to be generated. 
-*/
-
-## randomHex
-
-/*
-This method generates a random hex of given length.
-Includes only hex characters i.e [0-9 and a-f].
-@param length Length of random string to be generated.
-*/
-
-## randomBinary
-
-/*
-This method generates a random binary string of given length.
-Includes only binary characters i.e [0 and 1].
-@param length Length of random string to be generated.
-*/
-
-## randomOctal
-
-/*
-This method generates a random octal string of given length.
-Includes only octal characters i.e [0-7].
-@param length Length of random string to be generated.
-*/
-
-## customRandomString
-
-/*
-This method generates a random string of given length.
-Includes only characters given in customCharSet.
-@param length Length of random string to be generated.
-@param customCharSet Character set from which random string will be created.
-*/
-
-## getRandomPassword
-
-/*
-This method generates a random string of given length.
-Includes numbers, small letters, capital letters and special characters i.e [a-z, A-Z, 0-9 and !@#$%^&*()].
-@param length Length of random string to be generated.
-@param minSpecialChar Minimum number of special characters required.
-*/
-
-## getRandomPasswordStrict
-
-/*
-This method generates a random string of given length.
-Includes numbers, small letters, capital letters and fixed number of special characters i.e [a-z, A-Z, 0-9 and !@#$%^&*()].
-@param length Length of random string to be generated.
-@param totalSpecialChar Fixed number of special characters required.
-*/
-
+Min: Default is 0
+Max: Default is 100
+```
+  random.getRndInteger(5, 50) // 7
+```
