@@ -1,6 +1,6 @@
 {
   "name": "random-string-alphanumeric-generator",
-  "version": "0.11.0",
+  "version": "0.11.1",
   "description": "A module that can return various types of random string",
   "main": "server.js",
   "scripts": {
