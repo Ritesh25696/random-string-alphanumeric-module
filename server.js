@@ -230,4 +230,12 @@ module.exports = {
   getRndInteger: function (min = 0, max = 100) {
     return Math.floor(Math.random() * (max - min)) + min;
   },
+
+  /**
+   * Generates random boolean true or false
+   * @returns boolean true or false
+   */
+  getRndBoolean: function () {
+    return Math.random() < 0.5;
+  }
 };

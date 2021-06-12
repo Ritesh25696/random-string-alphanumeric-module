@@ -111,3 +111,9 @@ Max: Default is 100
 ```
   random.getRndInteger(5, 50) // 7
 ```
+
+- getRndBoolean<br>
+Generates random boolean true or false.
+```
+  random.getRndBoolean() // True or False
+```
