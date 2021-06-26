@@ -10,7 +10,7 @@ A module that can return various types of random string<br>
 npm install random-string-alphanumeric-generator --save
 
 ## HOW TO USE
-var random = require('random-string-alphanumeric-generator');
+var random = require(random-string-alphanumeric-generator);
 
 `random.randomAlphanumeric(10, "lowercase")`
 //Returns b2pdk4bv98
